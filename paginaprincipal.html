@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aranhaverso</title>
+
+    <!-- Ícone na aba -->
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon" sizes="16x16">
+
+    <style>
+        /* Estilo do fundo */
+        body {
+            background-image: url('imagens/hm.jpg'); /* Imagem de fundo */
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Caixa branca no meio */
+        .overlay {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 50px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Título */
+        h1 {
+            color: red;
+            font-size: 3em;
+            margin: 0 0 30px 0;
+        }
+
+        /* Container das imagens */
+        .content {
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap; /* Permite quebrar linha */
+        }
+
+        /* Estilo de cada personagem */
+        figure {
+            width: 30%; /* Ocupa 30% do espaço, cabe 3 por linha */
+            max-width: 200px; /* Limita tamanho máximo */
+            margin: 0;
+            padding: 10px;
+            border: 3px solid transparent;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+        }
+
+        /* Efeito hover (passar o mouse) */
+        figure:hover {
+            transform: scale(1.1); /* Zoom */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+            border: 3px solid red; /* Borda vermelha */
+        }
+
+        /* Legenda */
+        figcaption {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Imagens arredondadas */
+        img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h1>Aranhaverso</h1>
+
+        <div class="content">
+            <!-- Linha de cima -->
+            <figure>
+               <a href="Homem-Aranha.html" target="_blank">
+                <img src="imagens/homemaranha.jpg" width="150" height="150" />
+                <figcaption><ins>Homem-Aranha</ins></figcaption>
+            </figure>     
+
+            <figure>
+                <a href="Miles.html" target="_blank">
+                <img src="imagens/miles.jpg" width="150" height="150" />
+                <figcaption><ins>Miles Morales</ins></figcaption>
+            </figure>
+
+            <figure>
+                <a href="Gwen.html" target="_blank">
+                <img src="imagens/gwen.jpg" width="150" height="150" />
+                <figcaption><ins>Gwen Stacy</ins></figcaption>
+            </figure>
+
+            <!-- Linha de baixo -->
+            <figure>
+               <a href="Venom.html" target="_blank">
+                <img src="imagens/venom.jpg" width="150" height="150" />
+                <figcaption><ins>Venom</ins></figcaption>
+            </figure>
+
+            <figure>
+               <a href="Miguel O'Hara.html" target="_blank">
+                <img src="imagens/miguel.jpg" width="150" height="150" />
+                <figcaption><ins>Miguel O'Hara</ins></figcaption>
+            </figure>
+
+            <figure>
+               <a href="Dr. Octopus Poster.html" target="_blank">
+                <img src="imagens/Dr..jpg" width="150" height="150" />
+                <figcaption><ins>Dr. Octopus Poster</ins></figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+</body>
+</html>
