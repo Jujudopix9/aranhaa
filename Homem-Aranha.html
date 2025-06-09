@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homem-Aranha</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Homem-Aranha</title>
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon"sizes="16 x 16">
+   
+
+
+
+     <style>  
+        body {
+            /* Definindo a imagem de fundo */
+            background-image: url('imagens/hm.jpg');
+            background-position: center; /* Centraliza a imagem no fundo */
+            background-attachment: fixed; /* Faz a imagem ficar fixa quando você rola a página */
+            margin: 0; /* Remove as margens padrão */
+            height: 100vh; /* Faz com que o body ocupe toda a altura da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Folha branca que sobrepõe o fundo */
+        .overlay {
+            position: absolute; /* A folha branca fica acima do fundo */
+            background-color: rgba(255, 255, 255, 0.9); /* Cor branca com opacidade */
+            padding: 50px;
+            width: 80%; /* Largura da folha */
+            max-width: 900px; /* Largura máxima para a folha */
+            border-radius: 15px; /* Bordas arredondadas para suavizar */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+            text-align: center;
+        }
+
+        h1 {
+            color: red; /* Cor do título */
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Um container para o texto */
+        .content {
+            z-index: 1;
+        }
+
+
+
+        /* Estilo para o botão */
+        .btn-continuar {
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 15px 30px; /* Tamanho do botão */
+            font-size: 1.2em; /* Tamanho da fonte */
+            background-color: red; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove borda */
+            border-radius: 10px; /* Bordas arredondadas */
+            cursor: pointer; /* Aponta o cursor como mãozinha */
+            transition: background-color 0.3s ease; /* Transição suave na cor */
+        }
+
+        /* Efeito de hover para o botão */
+        .btn-continuar:hover {
+            background-color: #c10000; /* Muda para um tom mais escuro de vermelho */
+        }
+
+
+    </style>
+
 </head>
 <body>
-    <h1>Homem-Aranha </h1>
+    
+    
+
+
+   <div class="overlay">
+        <div class="content">
+            <h1>HOMEM-ARANHA</h1>
+            <h2>Peter Parker: O Homem por Trás da Máscara</h2>
+             <p> Peter Parker é um jovem de Nova York que, após ser picado por uma aranha radioativa, ganha habilidades extraordinárias como força sobre-humana, agilidade e a capacidade de escalar paredes. Inicialmente, ele usa esses poderes para ganho pessoal, mas, após a morte de seu tio Ben — causada por um criminoso que ele poderia ter impedido — Peter adota a identidade do Homem-Aranha, comprometendo-se a proteger os inocentes.</p>
+     
+      
+
+      <p> Apesar de seus poderes, Peter enfrenta desafios cotidianos: lida com a perda de entes queridos, como Gwen Stacy, e tenta equilibrar sua vida de herói com suas responsabilidades como estudante e fotógrafo. Seu lema, "Com grandes poderes vêm grandes responsabilidades", reflete seu compromisso em fazer o bem, mesmo diante das adversidades.</p>
+     
+    
+     
+     
+     
+     
+     <a href="paginaprincipal.html" target="_blank">
+      
+              	  <button class="btn-continuar"><i>Voltar</i></button>
+     
+     
+     
+     
+            </div>
+    </div>
+
+ 
+      
+
+
 </body>
 </html>
+
+
+
