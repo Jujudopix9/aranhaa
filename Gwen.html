@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gwen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Homem-Aranha</title>
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon"sizes="16 x 16">
+   
+
+
+
+     <style>  
+        body {
+            /* Definindo a imagem de fundo */
+            background-image: url('imagens/hm.jpg');
+            background-position: center; /* Centraliza a imagem no fundo */
+            background-attachment: fixed; /* Faz a imagem ficar fixa quando você rola a página */
+            margin: 0; /* Remove as margens padrão */
+            height: 100vh; /* Faz com que o body ocupe toda a altura da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Folha branca que sobrepõe o fundo */
+        .overlay {
+            position: absolute; /* A folha branca fica acima do fundo */
+            background-color: rgba(255, 255, 255, 0.9); /* Cor branca com opacidade */
+            padding: 50px;
+            width: 80%; /* Largura da folha */
+            max-width: 900px; /* Largura máxima para a folha */
+            border-radius: 15px; /* Bordas arredondadas para suavizar */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(54, 54, 56); /* Cor do título */
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Um container para o texto */
+        .content {
+            z-index: 1;
+        }
+
+
+
+        /* Estilo para o botão */
+        .btn-continuar {
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 15px 30px; /* Tamanho do botão */
+            font-size: 1.2em; /* Tamanho da fonte */
+            background-color: rgb(54, 54, 56); /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove borda */
+            border-radius: 10px; /* Bordas arredondadas */
+            cursor: pointer; /* Aponta o cursor como mãozinha */
+            transition: background-color 0.3s ease; /* Transição suave na cor */
+        }
+
+        /* Efeito de hover para o botão */
+        .btn-continuar:hover {
+            background-color: rgb(13, 26, 206); /* Muda para um tom mais escuro de vermelho */
+        }
+
+
+    </style>
+
 </head>
 <body>
-    <h1>Gwen </h1>
+    
+    
+
+
+   <div class="overlay">
+        <div class="content">
+            <h1>Gwen stacy</h1>
+            <h2>Spider-Woman: Gwen Stacy, A Aranha de Outra Realidade</h2>
+             <p>Venom é um dos vilões mais icônicos da Marvel, mas ao longo dos anos, ele também se tornou um anti-herói popular. Criado por David Michelinie e Todd McFarlane, Venom é o resultado da fusão entre um simbiótico alienígena e Eddie Brock, um jornalista desiludido. O simbiótico, inicialmente ligado a Peter Parker (o Homem-Aranha), rejeita o herói por sua natureza egoísta e, posteriormente, encontra Eddie, formando uma aliança que resulta na criação de Venom. </p>
+     
+      
+
+      <p> Gwen Stacy, conhecida como Spider-Woman (ou Spider-Gwen, como ficou famosa), é uma das versões mais interessantes e empolgantes do universo Marvel. Criada por Jason Latour e Robbie Rodriguez em 2014, ela vem de uma realidade alternativa, onde foi ela, e não Peter Parker, que foi mordida por uma aranha radioativa. No seu universo, Gwen é uma jovem estudante que, ao ganhar seus poderes, enfrenta desafios semelhantes aos de Peter Parker, mas com sua própria abordagem e personalidade.</p>
+     
+       <p>Diferente de outros Homens-Aranha, Gwen lida com a perda de pessoas próximas e com o peso da responsabilidade de ser uma heroína, tudo enquanto tenta manter sua vida pessoal intacta. Seu traje branco com detalhes em rosa e verde é uma das marcas registradas de sua versão, e ela rapidamente se tornou um ícone no multiverso da Marvel.</p>
+     
+     
+     
+     <a href="paginaprincipal.html" target="_blank">
+      
+              	  <button class="btn-continuar"><i>Voltar</i></button>
+     
+     
+     
+     
+            </div>
+    </div>
+
+ 
+      
+
+
 </body>
 </html>
