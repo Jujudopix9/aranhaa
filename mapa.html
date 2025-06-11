@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homem-Aranha</title>
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon" sizes="16x16">
+
+    <style>  
+        body {
+            /* Definindo a imagem de fundo */
+            background-image: url('imagens/hm.jpg');
+            background-position: center; /* Centraliza a imagem no fundo */
+            background-attachment: fixed; /* Faz a imagem ficar fixa quando você rola a página */
+            margin: 0; /* Remove as margens padrão */
+            min-height: 100vh; /* Faz com que o body ocupe toda a altura da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px; /* **Mudança aqui: Ajuste para afastar um pouco o conteúdo do topo** */
+        }
+
+        /* Folha branca que sobrepõe o fundo */
+        .overlay {
+            position: absolute; /* A folha branca fica acima do fundo */
+            background-color: rgba(255, 255, 255, 0.9); /* Cor branca com opacidade */
+            padding: 50px;
+            width: 80%; /* Largura da folha */
+            max-width: 900px; /* Largura máxima para a folha */
+            border-radius: 15px; /* Bordas arredondadas para suavizar */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+            text-align: center;
+            top: 50px; /* **Mudança aqui: Ajuste para afastar do topo** */
+            z-index: 10; /* **Mudança aqui: Garantir que o overlay esteja acima de outros conteúdos** */
+            min-height: 80vh; /* **Mudança aqui: Garante que a overlay tenha altura mínima** */
+            display: flex;
+            flex-direction: column; /* **Mudança aqui: Organiza o conteúdo na vertical** */
+            justify-content: flex-start; /* **Mudança aqui: Alinha os itens para o topo** */
+        }
+        h1 {
+    color: red; /* Cor vermelha */
+}
+        /* Título */
+        h2 {
+            font-size: 2em;
+            color: #333; /* Cor mais suave para o título */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+
+        h3 {
+            color: #555; /* Cor mais suave para os subtítulos */
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666; /* Cor suave para o parágrafo */
+        }
+
+        /* Estilo para o botão */
+        .btn-continuar {
+            margin-top: 20px; /* Espaço acima do botão */
+            padding: 15px 30px; /* Tamanho do botão */
+            font-size: 1.2em; /* Tamanho da fonte */
+            background-color: red; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove borda */
+            border-radius: 10px; /* Bordas arredondadas */
+            cursor: pointer; /* Aponta o cursor como mãozinha */
+            transition: background-color 0.3s ease; /* Transição suave na cor */
+        }
+
+        /* Efeito de hover para o botão */
+        .btn-continuar:hover {
+            background-color: #c10000; /* Muda para um tom mais escuro de vermelho */
+        }
+
+        /* Ajustes no mapa para garantir que ele se ajuste bem na tela */
+        iframe {
+            margin-top: 20px;
+            border-radius: 10px;
+            max-width: 100%; /* **Mudança aqui: Garantir que o iframe se ajuste ao container** */
+            height: auto; /* **Mudança aqui: Ajuste da altura** */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="overlay">
+        <div class="mapa-container">
+            <h1>Explore o Mundo do Homem-Aranha</h1>
+            <p>Veja as principais locações de Nova York onde o Homem-Aranha vive suas aventuras!</p>
+            
+            <!-- Mapa de Manhattan -->
+            <h3>Manhattan, Nova York - O lar do Homem-Aranha</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24183.31399155344!2d-73.985199!3d40.757456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e3d98a0dcd%3A0x5e2e07d7f22e79cc!2sManhattan%2C%20NYC%2C%20United%20States!5e0!3m2!1sen!2s!4v1656007535849!5m2!1sen!2s" 
+                width="350" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+            <h3>Queens, Nova York – Onde tudo começou para Peter Parker</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24128.33505843962!2d-73.8500143!3d40.7498257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257907539f65d%3A0x44ba55ba482992fe!2sQueens%2C%20NYC%2C%20United%20States!5e0!3m2!1sen!2s!4v1656007634803!5m2!1sen!2s" 
+                width="350" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+            <h3>Pontes de Nova York – O Homem-Aranha balança por elas!</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24183.726727887243!2d-73.9962548!3d40.706086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2c8e420e1f%3A0x1ed2c7454c60c2fa!2sBrooklyn%20Bridge!5e0!3m2!1sen!2sus!4v1656007772023!5m2!1sen!2sus" 
+                width="350" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+            <h3>Cemitério de Forest Hills - Um local marcante na vida de Peter Parker</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24148.998052334208!2d-73.8442019!3d40.7211527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c256b292b17127%3A0x3b670b79d4172c0b!2sForest%20Hills%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1656007852116!5m2!1sen!2s" 
+                width="350" 
+                height="200" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+        </div>
+     
+        <a href="paginaprincipal.html" target="_blank">
+            <button class="btn-continuar"><i>Voltar</i></button>
+        </a>
+    </div>
+
+</body>
+</html>
