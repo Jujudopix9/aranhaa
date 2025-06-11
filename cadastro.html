@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homem-Aranha - Cadastro</title>
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon" sizes="16x16">
+    <style>  
+        body {
+            background-image: url('imagens/hm.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7); /* escurece um pouco */
+            padding: 50px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: white;
+            border: 2px solid red; /* borda vermelha para destacar */
+            background-image: url('imagens/teia.png'); /* Uma teia como fundo do formulário */
+            background-size: contain;
+        }
+
+        h1 {
+            color: red;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-family: 'Impact', sans-serif; /* Fonte que remete aos quadrinhos */
+        }
+
+        .btn-continuar {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn-continuar:hover {
+            background-color: #c10000;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid red;
+            background-color: #fff;
+            color: #333;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            background-color: #0051a2;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #003a7f;
+        }
+
+        /* Campo para a foto com borda customizada */
+        input[type="file"] {
+            border: 2px dashed red;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        /* Alteração para o campo de mensagem */
+        textarea {
+            border-color: red;
+        }
+
+        /* Acentuação visual nos campos obrigatórios */
+        label {
+            color: white;
+            font-weight: bold;
+        }
+
+        fieldset {
+            border: 2px solid red;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 1.5em;
+            color: red;
+            font-family: 'Impact', sans-serif;
+        }
+
+        /* Efeitos de teia nos campos */
+        input, select, textarea {
+            background: url('imagens/teia-input.png') no-repeat scroll right center;
+            background-size: 25%;
+        }
+
+        /* Adicionando uma cor de texto legível nos campos de input */
+        input, textarea {
+            color: white;
+        }
+
+        /* Ajuste de contraste no texto */
+        input:focus, textarea:focus {
+            background-color: rgba(255, 255, 255, 0.9); /* melhora a visibilidade do texto */
+            color: black; /* Deixa o texto escuro quando o campo é focado */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="content">
+            <a href="index.html">
+                <button class="btn-continuar">Voltar</button>
+            </a>
+
+            <h1>Cadastro - Homem-Aranha</h1>
+            
+            <form>
+
+                <fieldset>
+                    <legend><b>Dados Pessoais</b></legend>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" required>
+
+                    <label for="idade">Idade</label><br>
+                    <input type="number" name="idade" id="idade" min="18" max="40">
+
+                    <label for="sexo">Sexo</label><br>    
+                    <input type="radio" name="sexo" value="F" checked> F
+                    <input type="radio" name="sexo" value="M"> M
+                    <br><br>
+
+                    <label for="login">Login</label><br>
+                    <input type="text" name="login" id="login" required>
+
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" required minlength="8">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Formas de Contato</b></legend>
+
+                    <label for="msg">Mensagem:</label><br>
+                    <textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea>
+
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="digite seu email com @">
+
+                </fieldset>
+
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+                <input type="button" value="Testar" onclick="alert('Você clicou!');">
+                <a href="paginaprincipal.html" target="_blank">
+                    <button class="btn-continuar">Voltar</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
