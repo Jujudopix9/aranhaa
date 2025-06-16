@@ -1,111 +1,102 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Homem-Aranha</title>
-    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon"sizes="16 x 16">
-   
+    <link rel="icon" href="imagens/inseto-aranha.png" type="image/x-icon" sizes="16x16">
 
-
-
-     <style>  
+    <style>  
         body {
-            /* Definindo a imagem de fundo */
             background-image: url('imagens/hm.jpg');
-            background-position: center; /* Centraliza a imagem no fundo */
-            background-attachment: fixed; /* Faz a imagem ficar fixa quando você rola a página */
-            margin: 0; /* Remove as margens padrão */
-            height: 100vh; /* Faz com que o body ocupe toda a altura da tela */
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
 
-        /* Folha branca que sobrepõe o fundo */
         .overlay {
-            position: absolute; /* A folha branca fica acima do fundo */
-            background-color: rgba(255, 255, 255, 0.9); /* Cor branca com opacidade */
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 50px;
-            width: 80%; /* Largura da folha */
-            max-width: 900px; /* Largura máxima para a folha */
-            border-radius: 15px; /* Bordas arredondadas para suavizar */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
 
         h1 {
-            color: red; /* Cor do título */
+            color: red;
             font-size: 3em;
             margin: 0;
         }
 
-        /* Um container para o texto */
         .content {
             z-index: 1;
         }
 
-
-
-        /* Estilo para o botão */
         .btn-continuar {
-            margin-top: 20px; /* Espaço acima do botão */
-            padding: 15px 30px; /* Tamanho do botão */
-            font-size: 1.2em; /* Tamanho da fonte */
-            background-color: red; /* Cor de fundo do botão */
-            color: white; /* Cor do texto do botão */
-            border: none; /* Remove borda */
-            border-radius: 10px; /* Bordas arredondadas */
-            cursor: pointer; /* Aponta o cursor como mãozinha */
-            transition: background-color 0.3s ease; /* Transição suave na cor */
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        /* Efeito de hover para o botão */
         .btn-continuar:hover {
-            background-color: #c10000; /* Muda para um tom mais escuro de vermelho */
+            background-color: #c10000;
         }
 
+        ul {
+            text-align: left;
+            margin-top: 20px;
+        }
 
+        ul li {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
     </style>
 
 </head>
 <body>
-    
-    
-
 
    <div class="overlay">
         <div class="content">
             <h1>HOMEM-ARANHA</h1>
             <h2>Peter Parker: O Homem por Trás da Máscara</h2>
-             <p> Peter Parker é um jovem de Nova York que, após ser picado por uma aranha radioativa, ganha habilidades extraordinárias como força sobre-humana, agilidade e a capacidade de escalar paredes. Inicialmente, ele usa esses poderes para ganho pessoal, mas, após a morte de seu tio Ben — causada por um criminoso que ele poderia ter impedido — Peter adota a identidade do Homem-Aranha, comprometendo-se a proteger os inocentes.</p>
-     
-      
+            <p> Peter Parker é um jovem de Nova York que, após ser picado por uma aranha radioativa, ganha habilidades extraordinárias como força sobre-humana, agilidade e a capacidade de escalar paredes. Inicialmente, ele usa esses poderes para ganho pessoal, mas, após a morte de seu tio Ben — causada por um criminoso que ele poderia ter impedido — Peter adota a identidade do Homem-Aranha, comprometendo-se a proteger os inocentes.</p>
 
-      <p> Apesar de seus poderes, Peter enfrenta desafios cotidianos: lida com a perda de entes queridos, como Gwen Stacy, e tenta equilibrar sua vida de herói com suas responsabilidades como estudante e fotógrafo. Seu lema, "Com grandes poderes vêm grandes responsabilidades", reflete seu compromisso em fazer o bem, mesmo diante das adversidades.</p>
-     
-    
-     
-     
-     
-     
-     <a href="paginaprincipal.html" target="_blank">
-      
-              	  <button class="btn-continuar"><i>Voltar</i></button>
-     
-     
-     
-     
-            </div>
+            <p> Apesar de seus poderes, Peter enfrenta desafios cotidianos: lida com a perda de entes queridos, como Gwen Stacy, e tenta equilibrar sua vida de herói com suas responsabilidades como estudante e fotógrafo. Seu lema, "Com grandes poderes vêm grandes responsabilidades", reflete seu compromisso em fazer o bem, mesmo diante das adversidades.</p>
+
+            <h3>Filmes do Homem-Aranha</h3>
+            <ul>
+                <li>Homem-Aranha (2002) – Tobey Maguire</li>
+                <li>Homem-Aranha 2 (2004) – Tobey Maguire</li>
+                <li>Homem-Aranha 3 (2007) – Tobey Maguire</li>
+                <li>O Espetacular Homem-Aranha (2012) – Andrew Garfield</li>
+                <li>O Espetacular Homem-Aranha 2 (2014) – Andrew Garfield</li>
+                <li>Homem-Aranha: De Volta ao Lar (2017) – Tom Holland</li>
+                <li>Homem-Aranha: Longe de Casa (2019) – Tom Holland</li>
+                <li>Homem-Aranha: Sem Volta Para Casa (2021) – Tom Holland</li>
+                <li>Homem-Aranha no Aranhaverso (2018) – Animação</li>
+                <li>Homem-Aranha: Através do Aranhaverso (2023) – Animação</li>
+            </ul>
+
+            <a href="paginaprincipal.html" target="_blank">
+                <button class="btn-continuar"><i>Voltar</i></button>
+            </a>
+        </div>
     </div>
-
- 
-      
-
 
 </body>
 </html>
-
-
-
