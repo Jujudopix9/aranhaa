@@ -194,6 +194,50 @@
     }
 }
 
+        
+@media print {
+
+    /* Remove fundo e efeitos */
+    body {
+        background: white !important;
+    }
+
+    .overlay {
+        background: white !important;
+        box-shadow: none !important;
+    }
+
+    /* Some com botões e links (não precisam aparecer no papel) */
+    .btn-continuar,
+    .link-contato,
+    .link-mapa {
+        display: none !important;
+    }
+
+    /* Remove animação */
+    h1 {
+        animation: none !important;
+        text-shadow: none !important;
+        color: black !important;
+    }
+
+    /* Imagens menores para impressão */
+    img {
+        max-width: 120px !important;
+        height: auto !important;
+    }
+
+    /* Figuras alinhadas verticalmente para caber no papel */
+    figure {
+        width: 100% !important;
+        page-break-inside: avoid; 
+        margin-bottom: 20px;
+        border: none !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+}
+
 
     </style>
 </head>
