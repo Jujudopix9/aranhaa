@@ -126,7 +126,54 @@
             color: rgb(221, 10, 10);
         }
 
-       
+
+@media (max-width: 600px) {
+
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .overlay {
+        width: 95%;
+        padding: 25px;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.2em;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+        background-size: 18%; /* teia menor no input */
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    .btn-continuar {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    textarea {
+        min-height: 90px;
+    }
+}
+
 
     </style>
 </head>
@@ -185,3 +232,4 @@
     </div>
 </body>
 </html>
+
